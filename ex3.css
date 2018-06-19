@@ -1,0 +1,110 @@
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+  background-color: rgb(0, 255, 255);
+  font-size: 20px;
+  font-weight: bolder;
+}
+.list {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  position: relative;
+}
+.item {
+  background-color: red;
+  width: 5%;
+  height: 40px;
+  display: inline;
+  text-align: center;
+}
+.element-A {
+  padding-top: 5px;
+  border-radius: 50%;
+  margin: 0 calc((85% - 2px) / 4) 25% 0;
+}
+.element-B {
+  background-color: yellow;
+  border: 1px solid red;
+  margin:  0 calc((85% - 2px) / 4) 25%;
+  border-radius: 10px;
+}
+.element-C {
+  background-color: blue;
+  margin: 0 0 25% calc((85% - 2px) / 4);
+  text-align: left;
+}
+.element-D {
+  background-color: green;
+  margin: 0 calc((80% - 3px) / 4) 25% 0;
+  text-align: right;
+  border-right: 3px solid blue;
+}
+.element-E {
+  background-color: #ffa400;
+  width: 10%;
+  height: 80px;
+  line-height: 80px;
+  margin: 0 calc((80% - 3px) / 4) 25%;
+}
+.element-F {
+  background-color: #8d0083;
+  text-align: left;
+  margin: 0 0 25% calc((80% - 3px) / 4);
+  line-height: 40px;
+}
+.element-G {
+  background-color: transparent;
+  color: green;
+  margin: 20px calc(85% / 4) 0 0;
+  text-align: right;
+}
+.element-H {
+  background-color: black;
+  color: white;
+  margin: 0 calc(85% / 4) 0;
+  text-align: left;
+  line-height: 40px;
+}
+.element-I {
+  background-color: gray;
+  margin: 20px 0 0 calc(85% / 4);
+  color: red;
+  position: relative;
+}
+.element-I span {
+  position: absolute;
+  top: -10px;
+}
+@media only screen and (max-width: 1023px) {
+  .element-A,.element-C,.element-G,.element-I {
+    margin: 0 calc(90% / 2) 25% 0;
+  }
+  .element-E {
+    margin: 0 40% 25% 0;
+  }
+  .element-B,.element-D,.element-F,.element-H {
+    margin: 0 0 25% 45%;
+  }
+  .element-B {
+    margin-left: calc(45% - 2px);
+  }
+  .element-D {
+    margin-left: calc(45% - 3px);
+  }
+  .element-I {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px)
+{
+  .item {
+    margin: 0 45% 5%;
+  }
+  .element-I {
+    margin-bottom: 0;
+  }
+
+}
