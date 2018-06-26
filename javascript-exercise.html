@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML + Javascript Exercise</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/js-exerscise.css">
+    <script src="javascripts/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>HTML + Javascript Exercise</h1>
+      <h2>Knowledge round-up</h2>
+      <h3>Javascript</h3>
+      <ol class="question-list">
+        <li class="question-item">What are the differences between a variable that is: <code>null, undefined</code> ?</li>
+        <ul class="answer-list">
+          <li class="answer-item">When the variable is declared but hasn't assigned, it is undefined.</li>
+          <li class="answer-item">Null is using for assigns a null value to a variable.</li>
+          <code>
+              typeof null = object <br> 
+              typeof undefined = undefined <br>
+              null == undefined //true <br>
+              null === undefined //false <br>
+          </code>
+        </ul>
+        <li class="question-item">What is <code>use strict</code>? what are the advantages and disadvantages to using it? Strict mode is using for:</li>
+          <ul class="answer-list">
+            <li class="answer-item">Make code clear and easy to maintenance.</li>
+            <li class="answer-item">Prevent usage, and throw errors when programmers execute unsafe handlers, which may be unwanted.</li>
+            <li class="answer-item">Disabling features may be confusing, or should not be used.</li>
+            <li class="answer-item">Prevent the use of some words that may be used as keyworks in the future.</li>
+          </ul>
+          <span>Advantages</span>
+          <ul class="advantages-list">
+            <li class="advantages-item">Catch common coding errors, which will throw exceptions.</li>
+            <li class="advantages-item">When vulnerable actions are performed, it throws errors.</li>
+            <li class="advantages-item">Show and let us know and disable the features that poorly coded.</li>
+          </ul>
+          <span>Disadvantages</span>
+          <ul class="disadvantages-list">
+            <li class="disadvantages-item">The code must be handled more strict.</li>
+          </ul>
+        <li class="question-item">What are the differences between <code>==</code> and <code>===</code>? Write an example for each case (if any)?</li>
+        <ul class="answer-list">
+          <li class="answer-item"><code>==</code> Compare value not type of value.</li>
+          <li class="answer-item"><code>===</code> Comare both value and type of value.</li>
+          <span>Example:</span><br>
+          <code>
+            1 == '1' //true <br>
+            1 === '1' //false <br>
+          </code>
+        </ul>
+        <li class="question-item">What is different between declaration: <code>var, const</code> and <code>let?</code></li>
+        <ul class="answer-list">
+          <li class="answer-item"><code>var</code> is using for declares a variable. It can be used in both ES5 and ES6.</li>
+          <li class="answer-item"><code>let</code> is using for declares a variable in block scope. It can be used in ES6.
+          <li class="answer-item"><code>cost</code> are block-scoped, much like variables defined using the let statement. The value of a constant cannot change through re-assignment, and it can't be redeclared.</li>
+        </ul>
+      </ol>
+      <h3>Playground</h3>
+    </main>
+  </body>
+</html>
