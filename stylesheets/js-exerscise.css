@@ -1,0 +1,27 @@
+body {
+  line-height: 30px;
+  color: #05a;
+}
+h1, h2, h3 {
+  text-align: center;
+  color: black;
+}
+h3 {
+  font-size: 1.5rem;
+}
+code {
+  color: #a50;
+  background-color: gainsboro;
+}
+.answer-item {
+  list-style-type: square;
+}
+.question-item {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: black;
+}
+span {
+  color: black;
+  font-weight: bolder;
+}
